@@ -45,7 +45,7 @@ export default function Home() {
 					/>
 				</div>
 				<div className="grid">
-					<h1 id="title">DNV Fuel Fighter</h1>
+					<h1 id="title">Fuel Fighter</h1>
 					<h4>Inspire a sustainable future</h4>
 				</div>
 			</section>
@@ -53,7 +53,7 @@ export default function Home() {
 				<div className="grid">
 					<div className="two-thirds">
 						<h2>Latest updates</h2>
-						<p>We at DNV Fuel Fighter want to share our experience with our friends, family and anyone else interested in what we do. Our blog is the best way for anyone interested to get an in depth view of what we do both socially and as a technical student organization.</p>
+						<p>We at Fuel Fighter want to share our experience with our friends, family and anyone else interested in what we do. Our blog is the best way for anyone interested to get an in depth view of what we do both socially and as a technical student organization.</p>
 					</div>
 					<div className="row-center">
 						{posts?.map(post => (
@@ -84,9 +84,9 @@ export default function Home() {
 			<section style={{ background: '#fafafa' }}>
 				<div className="grid">
 					<div className="two-thirds">
-						<img alt="DNV GL Fuel Fighter logo" src={logoImage} width="64" />
-						<h2>Apply for DNV Fuel Fighter</h2>
-						<p>DNV Fuel Fighter is a technical student organization at NTNU working with the goal of making the world’s most energy efficient electric car.</p>
+						<img alt="Fuel Fighter logo" src={logoImage} width="64" />
+						<h2>Apply for Fuel Fighter</h2>
+						<p>Fuel Fighter is a technical student organization at NTNU working with the goal of making the world’s most energy efficient electric car.</p>
 						<A className="button suggested-action" href="./join">Apply now</A>
 					</div>
 				</div>

@@ -9,7 +9,6 @@ import sponsorImage from '../assets/sponsor.png'
 
 import DNVGL from '../assets/sponsors/colored/DNV.png'
 import NTNU from '../assets/sponsors/colored/NTNU.png'
-import Ouster from '../assets/sponsors/colored/Ouster.png'
 import AlvaIndustries from '../assets/sponsors/colored/Alva_industries.svg'
 import Eker from '../assets/sponsors/colored/Eker.PNG'
 import Zolve from '../assets/sponsors/colored/Zolve.png'
@@ -21,7 +20,6 @@ import TrondheimStaal from '../assets/sponsors/colored/Trondheim_staal.png'
 import IDE from '../assets/sponsors/IDEhouse.png'
 import SciDart from '../assets/sponsors/scichart.png'
 import FourTest from '../assets/sponsors/colored/4test.png'
-import VectorNav from '../assets/sponsors/colored/VectorNav.svg'
 import MomentumIndustrial from '../assets/sponsors/colored/momentumIndustrial.jpg'
 import nskog from '../assets/sponsors/colored/Nskog.png'
 import EWGlassOgPlast from '../assets/sponsors/colored/EWGlassOgPlast.jpg'
@@ -49,7 +47,7 @@ export default function Sponsors() {
                     </div>
                 </div>
             </section>
-            <section style={{background: '#f8f8f8'}} >
+            {/* <section style={{background: '#f8f8f8'}} >
                 <div className="grid">
                     <h2>Main sponsor</h2>
                     <div className="sponsor-main two-thirds">
@@ -58,24 +56,14 @@ export default function Sponsors() {
                         <a target="_blank" rel="noopener noreferrer" className="button flat suggested-action" href="https://www.dnv.com/" >Visit</a>
                     </div>
                 </div>
-            </section>
+            </section> */}
             <section>
                 <div className="grid">
                     <h2>Platinum sponsors</h2>
                     <div className="sponsor third">
-                        <img alt="Ouster" src={Ouster}  />
-                        <p>Ouster is a team of software, hardware, business, and manufacturing experts building the next generation of high-resolution lidar sensors.<br/><br/></p>
-                        <a target="_blank" rel="noopener noreferrer" href="https://ouster.com/" className="button flat">Visit</a>
-                    </div>
-                    <div className="sponsor third">
                         <img alt="Alva industries" src={AlvaIndustries} />
                         <p>Alva was founded to meet the growing global energy demand with renewable technologies. We develop electric generators for production of clean energy and electric motors to convert this energy into motion.<br/></p>
                         <a target="_blank" rel="noopener noreferrer" href="https://alvaindustries.com/" className="button flat">Visit</a>
-                    </div>
-                     <div className="sponsor third">
-                        <img alt="VectorNav" src={VectorNav}  />
-                        <p> Vectornav is a leader in high-performance navigation solutions, using the newest GPS/GNSS technologies. They supply systems to military, marine, aerospace and robotics industries worldwide. <br/> </p> 
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.vectornav.com/" className="button flat">Visit</a>
                     </div>
                     <div className="sponsor third">
                         <img alt="Zolve" src={Zolve} />
@@ -120,6 +108,11 @@ export default function Sponsors() {
                 </div>
                 <div className="grid">
                     <h2>Bronze sponsors</h2>
+                    <div className="sponsor third">
+                        <img alt="DNV GL" src={DNVGL} />
+                        <p>We are the independent expert in risk management and quality assurance. Driven by our purpose, to safeguard life, property and the environment, we empower our customers and their stakeholders with facts and reliable insights so that critical decisions can be made with confidence. As a trusted voice for many of the world’s most successful organizations, we use our knowledge to advance safety and performance, set industry benchmarks, and inspire and invent solutions to tackle global transformations.</p>
+                        <a target="_blank" rel="noopener noreferrer" className="button flat" href="https://www.dnv.com/" >Visit</a>
+                    </div>
                     <div className="sponsor third">
                         <img alt="Lindberg & Lund" src={LindbergLund} />
                         <p>Lindberg & Lund AS imports and distributes construction adhesives, lubricants, release agents, composite materials, grouts and auxiliaries for the electronics industry.<br/><br/></p>

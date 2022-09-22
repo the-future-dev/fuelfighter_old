@@ -68,7 +68,7 @@ export default function Blogpost({ history, id }) {
 		content = (
 			<div style={{maxWidth: '1500px'}} > 
 				<Helmet>
-					<title>{'DNV GL FUEL FIGHTER: ' + blogpost.title}</title>
+					<title>{'FUEL FIGHTER: ' + blogpost.title}</title>
 				</Helmet>
 				<Section>
 					<Title>{blogpost.title}</Title>

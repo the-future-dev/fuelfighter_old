@@ -17,6 +17,8 @@ import un_sdg_13 from '../assets/UN_sustainable_development_goals/E_WEB_13.png';
 import un_sdg_17 from '../assets/UN_sustainable_development_goals/E_WEB_17.png';
 import shell_logo from '../assets/shell.png';
 
+import {name} from '../components/name';
+
 const useStyles = createUseStyles({
     un_sdg: {
         margin: '10px',
@@ -51,8 +53,8 @@ export default function About() {
             <Header />
             <div className={globalClasses.window} >
                 <div className={`${globalClasses.section} ${globalClasses.section_column}`}>
-                    <h2 className={globalClasses.title}>The DNV Fuel Fighter team </h2>
-                    <p className={`${globalClasses.description} ${globalClasses.two_thirds}`} >DNV Fuel Fighter is a technical student organization at NTNU working with the goal of making the world’s most energy efficient electric car. For 13 years we have been competing in the world’s leading student competition on energy efficiency, the Shell Eco Marathon. With several accomplishments through the years, we are always competing for the first place in the Urban Concept battery electric class, as well as challenging the communication, innovation and design awards. The last two years we have also started developing an autonomous system for the car, for competing in the Shell Eco Marathon Autonomous competition.</p>
+                    <h2 className={globalClasses.title}>The {name} team </h2>
+                    <p className={`${globalClasses.description} ${globalClasses.two_thirds}`} >Fuel Fighter is a technical student organization at NTNU working with the goal of making the world’s most energy efficient electric car. For 13 years we have been competing in the world’s leading student competition on energy efficiency, the Shell Eco Marathon. With several accomplishments through the years, we are always competing for the first place in the Urban Concept battery electric class, as well as challenging the communication, innovation and design awards. The last two years we have also started developing an autonomous system for the car, for competing in the Shell Eco Marathon Autonomous competition.</p>
                     <p className={`${globalClasses.description} ${globalClasses.two_thirds}`} >The team consists of more than 40 students from multiple fields of study at NTNU. We have students from 1st to 5th year, and exchange students from countries like Spain, Germany and France. Being a part of the team gives you valuable teamwork experience, and it is a great opportunity to get to try theory in practice. We design and produce everything on our car ourselves, except for the battery and motors. This includes working with PCB design, 3D modelling, composite work, CFD analysis and much more. The students run every aspect of the organization, from financials, marketing and sponsorships to general organizational work. Every year we also have master and bachelor students writing their thesis on the car.  </p>
                 </div>
             </div>

@@ -1,1 +1,1 @@
-export const name = "Fuel Fighter";
+export const name = "Fuel Fighter NTNU";

@@ -17,7 +17,7 @@ import un_sdg_13 from '../assets/UN_sustainable_development_goals/E_WEB_13.png';
 import un_sdg_17 from '../assets/UN_sustainable_development_goals/E_WEB_17.png';
 import shell_logo from '../assets/shell.png';
 
-import {name} from '../components/name';
+import {name} from '../components/name'; // Main organisation name
 
 const useStyles = createUseStyles({
     un_sdg: {

@@ -8,6 +8,8 @@ import Footer from '../_templates/Footer'
 import PostPreview from '../_templates/PostPreview'
 import blogService from '../_services/blog.services'
 
+import {name} from '../components/name';
+
 export default function Blog() {
 
 	const [loading, setLoading] = useState(false)
@@ -39,7 +41,7 @@ export default function Blog() {
 				<div className="grid">
 					<div className="two-thirds">
 						<h2>Welcome to the blog</h2>
-						<p>We at DNV Fuel Fighter want to share our experience with our friends, family and anyone else interested in what we do. Our blog is the best way for anyone interested to get an in depth view of what we do both socially and as a technical student organization.</p>
+						<p>We at {name} want to share our experience with our friends, family and anyone else interested in what we do. Our blog is the best way for anyone interested to get an in depth view of what we do both socially and as a technical student organization.</p>
 					</div>
 					<div className="row-center">
 						{posts?.map(post => (

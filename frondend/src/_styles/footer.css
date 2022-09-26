@@ -6,6 +6,8 @@ footer {
     justify-content: center;
     text-align: center;
     align-items: center;
+    background-color: rgb(128,128,128,0.2);
+    height: 200px;
 }
 
 footer > * {
@@ -15,7 +17,7 @@ footer > * {
 
 @media (min-width: 650px) {
     footer {
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     footer > * {
@@ -33,6 +35,15 @@ footer > ul {
     opacity: 0.8;
     text-align: center;
     list-style: none;
+}
+
+footer #logo {
+    line-height: 0;
+    vertical-align: middle;
+}
+
+footer #logo img {
+    height: 100px;
 }
 
 @media (min-width: 375px) {

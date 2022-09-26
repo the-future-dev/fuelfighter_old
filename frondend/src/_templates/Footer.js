@@ -1,14 +1,21 @@
 import React from 'react';
+
 import '../_styles/footer.css'
 
-export default function Footer() {
+import logo_black_exp from '../assets/logo_black_expanded.png'
+import logo_white_exp from '../assets/logo_black_expanded.png'
+
+
+
+export default function Footer({floating}) {
     return (
         <footer>
-            <div>
-                <p>© { (new Date().getFullYear())} DNV Fuel Fighter</p>
-            </div>
+            <ul>
+                <li><a id="logo"><img alt="Fuel Fighter: Home" src={floating ? logo_white_exp : logo_black_exp} /></a></li>  
+            </ul>
             <ul>
                 <li><a href="mailto:leder@fuelfighter.no" >Contact</a></li>
+                <p>© {(new Date().getFullYear())} Fuel Fighter NTNU</p>
             </ul>
         </footer>
     )

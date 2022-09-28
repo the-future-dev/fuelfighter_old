@@ -55,6 +55,14 @@
     font-size: 64px;
 }
 
+div .row-center {
+    /* flex: 1; */
+    padding: 200;
+    /* flex-direction: column;
+    display: inline-flex; */
+    /* background-color: red; */
+}
+
 @media (max-width: 660px) {
     #title {
         font-size: 48px;

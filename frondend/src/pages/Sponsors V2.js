@@ -7,6 +7,7 @@ import Footer from '../_templates/Footer'
 // assets
 import sponsorImage from '../assets/sponsor.png'
 
+import SUBSEA from '../assets/sponsors/colored/Subsea7_White.jpeg'
 import DNVGL from '../assets/sponsors/colored/DNV.png'
 import NTNU from '../assets/sponsors/colored/NTNU.png'
 import AlvaIndustries from '../assets/sponsors/colored/Alva_industries.svg'
@@ -112,6 +113,11 @@ export default function Sponsors() {
                         <img alt="DNV GL" src={DNVGL} />
                         <p>We are the independent expert in risk management and quality assurance. Driven by our purpose, to safeguard life, property and the environment, we empower our customers and their stakeholders with facts and reliable insights so that critical decisions can be made with confidence. As a trusted voice for many of the world’s most successful organizations, we use our knowledge to advance safety and performance, set industry benchmarks, and inspire and invent solutions to tackle global transformations.</p>
                         <a target="_blank" rel="noopener noreferrer" className="button flat" href="https://www.dnv.com/" >Visit</a>
+                    </div>
+                    <div className="sponsor third">
+                        <img alt="Subsea7 " src={SUBSEA}/>
+                        <p> Subsea7 makes offshore energy transition possible through the continuous evolution of lower-carbon oil and gas and by enabling the growth of renewables and emerging energy.<br></br><br></br>Fleet of 30+ vessels in over 30 countries - powered by over 13 000 employees!</p>
+                        <a target="_blank" rel="noopener noreferrer" className="button flat" href="https://www.subsea7.com/en/index.html" >Visit</a>
                     </div>
                     <div className="sponsor third">
                         <img alt="Lindberg & Lund" src={LindbergLund} />

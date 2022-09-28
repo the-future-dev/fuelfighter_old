@@ -2,7 +2,7 @@ import React from 'react';
 
 import '../_styles/footer.css'
 
-import logo_black_exp from '../assets/logo_black_expanded.png'
+import logo_black_exp from '../assets/logo_black.png'
 import logo_white_exp from '../assets/logo_black_expanded.png'
 
 

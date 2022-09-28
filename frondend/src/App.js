@@ -14,7 +14,7 @@ import AdminPage from './pages/Admin';
 import ThesisPage from './pages/Thesis';
 import ThesisDetailsPage from './pages/ThesisDetails';
 import PageNotFound from './pages/PageNotFound';
-
+import ContactPage from './pages/Contact page';
 
 export default function App() {
   
@@ -30,6 +30,7 @@ export default function App() {
     '/thesis/:id' : (props) => <ThesisDetailsPage id={props.id} />,
     '/join' : () => <JoinPage />,
     '/admin' : () => <AdminPage />,
+    '/contact' : () => <ContactPage />,
   }
   
   const routeResult = useRoutes(routes);

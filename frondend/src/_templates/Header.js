@@ -19,6 +19,7 @@ export default function Header({floating}) {
                     <li><A href="/about">About</A></li>
                     <li><A href="/history">History</A></li>
                     <li><A href="/join">Join</A></li>
+                    <li><A href="/contact">Contact us</A></li>
                 </ul>
                 <ul id="header-social">
 				    <li><a href="https://www.facebook.com/DnvFuelFighter/" title="facebook" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebookF} /></a></li>

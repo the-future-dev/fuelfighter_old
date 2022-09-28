@@ -116,7 +116,7 @@ export default function Sponsors() {
                     </div>
                     <div className="sponsor third">
                         <img alt="Subsea7 " src={SUBSEA}/>
-                        <p> Subsea7 makes offshore energy transition possible through the continuous evolution of lower-carbon oil and gas and by enabling the growth of renewables and emerging energy.<br></br><br></br>Fleet of 30+ vessels in over 30 countries - powered by over 13 000 employees!</p>
+                        <p> Subsea7 makes offshore energy transition possible through the continuous evolution of lower-carbon oil and gas and by enabling the growth of renewables and emerging energy.<br></br>Fleet of 30+ vessels in over 30 countries - powered by over 13 000 employees!</p>
                         <a target="_blank" rel="noopener noreferrer" className="button flat" href="https://www.subsea7.com/en/index.html" >Visit</a>
                     </div>
                     <div className="sponsor third">

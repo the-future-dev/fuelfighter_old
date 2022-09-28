@@ -1,0 +1,61 @@
+
+/*
+Contact page
+*/
+
+section {
+    font-family: "Raleway";
+}
+.contactCard {
+    background-color: #f8f8f8;
+    border-radius: 7px;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,.05),inset 0 1px 0 0 rgba(255,255,255,.2),inset 0 -1px 0 0 rgba(255,255,255,.1),0 1px 3px rgba(0,0,0,.05),0 1px 2px rgba(0,0,0,.1);
+    padding: 24px;
+    margin: 16px;
+    width: 800px;
+
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+/* .contactCardBody1 {
+    display: middle;
+    justify-content: space-evenly;
+    flex-wrap: column;
+    text-align: center;
+    width: auto;
+
+    
+}
+
+.contactCardBody2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: column;
+
+    
+} */
+
+.infos {
+    
+    flex: 1;
+    text-align: center;
+}
+
+#detailsContact {
+    font-size: 1em;
+    font-weight: 501;
+    margin-bottom: 3px;
+    margin-top: 0;
+    text-align: center;
+}
+
+#contactIMG{
+    width: 290px;
+    height: 290px;
+}

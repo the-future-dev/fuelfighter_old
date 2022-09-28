@@ -7,27 +7,20 @@ import { A } from 'hookrouter'
 import '../_styles/home.css'
 import Header from '../_templates/Header'
 import Footer from '../_templates/Footer'
-import PostPreview from '../_templates/PostPreview'
 
 // assets
 import landingImage from '../assets/car_render_transparent_crop1.png';
 import carRaceImage from '../assets/bil_speed.jpg'
 import logoImage from '../assets/logo_black.png'
-import blogService from '../_services/blog.services'
+
 
 import {name} from '../components/name';
+import BlogPreview from '../components/home/blogPreview'
 
 export default function Home() {
 
 	const [videoVisible, setVideoVisible] = useState(true)
 	const onVideoEnd = () => setVideoVisible(false)
-
-	const [posts, setPosts] = useState([]);
-
-	useEffect(() => {
-		blogService.blogposts(3)
-			.then(json => setPosts(json))
-	}, [])
 
 	return (
 		<>
@@ -57,19 +50,7 @@ export default function Home() {
 						<h2>Latest updates</h2>
 						<p>We at {name} want to share our experience with our friends, family and anyone else interested in what we do. Our blog is the best way for anyone interested to get an in depth view of what we do both socially and as a technical student organization.</p>
 					</div>
-					<div className="row-center">
-						{posts?.map(post => (
-							<PostPreview
-								key={post.id}
-								id={post.id}
-								title={post.title}
-								description={post.description}
-								author={post.author}
-								date={post.date}
-								image={post.image}
-							/>
-						))}
-					</div>
+					<BlogPreview />
 					<A href="/blog" className="read-more">Visit blog</A>
 				</div>
 			</section>

@@ -7,7 +7,7 @@ import Footer from '../_templates/Footer'
 // assets
 import sponsorImage from '../assets/sponsor.png'
 
-import SUBSEA from '../assets/sponsors/colored/Subsea7_White.jpeg'
+import SUBSEA from '../assets/sponsors/colored/subsea7.png'
 import DNVGL from '../assets/sponsors/colored/DNV.png'
 import NTNU from '../assets/sponsors/colored/NTNU.png'
 import AlvaIndustries from '../assets/sponsors/colored/Alva_industries.svg'

@@ -164,7 +164,7 @@ function JoinForm() {
 		selectedPositions: [],
 	};
 
-	const positions = ["Electrical Group Leader","Assistant Technical Leader","Marketing Group leader","Mechanical Group Leader","Marketing", "Mechanical", "Autonomous", "Electrical", "Design", "Software",];
+	const positions = ["Marketing", "Mechanical", "Autonomous", "Electrical", "Design", "Software",];
 	//const positions = ['Project Manager', 'Assistant project manager', 'Technical leader',  'Mechanical Group Leader', 'Autonomous Group Leader', 'Electrical Group Leader', 'Design Group Leader', 'Head of Finance', 'Head of Marketing', 'Software Group Leader']
 	//const positions = ["Head of Finance", "Mechanical Group Leader", "Design Group Leader", "Marketing Group Leader", "Mechanical Member", "Design Member", "Software Member", "Autonomous Member", "Electrical Member", "Social Media", "Web Developer", "Photo and Video", "Graphical Design", "Business Relations", "Event Manager", "Open Application"];
 	//const positions = ["Open application"];
@@ -279,28 +279,19 @@ export default function Join() {
 			<Header floating />
 			<PageBanner title="Join Us" image={bannerImage} />
 			<Section>
+				{/*<Title>Apply</Title>*/}
+				<JoinForm /> 
+
+				{/* <a target="_blank" rel="noopener noreferrer" href="https://forms.gle/4CWazjpxWbrPAmqx5"><Button>Application form</Button></a> */}
 
 				<IntroCard>
 					As a cross-disciplinary project we need students from every field of study. We are usually a team of 45 students, and always make sure some of them are exchange students. We like to have a good mixture of people from every year of study, to get good group dynamic and a good work culture to make people want to continue over several years. {/*By being a part of our team you get 7.5 credits you can use in you study plan.*/}
 				</IntroCard>
-				<Deadline>The application deadline is set to 23.59 30th of August </Deadline>
+				<Deadline>The recruitment period is closed, but you can send us an open application</Deadline>
 		
 				<PositionsContainer>
 					
-					<PositionCard
-						position="Electrical Group leader"
-						description= "As leader of the electrical team, you are responsible for making sure the electrical system is ready for the competition.  You will get insight in all the electronics needed to make an electric car, this includes everything from motors to the dashboard. Working on these systems you will gain knowledge about everything from hardware design to writing software. It is a great experience as you can influence the whole electrical system, and you get to help the team members when they encounter problems with their subsystems. Therefore the electrical leader should be structured and interested in both learning and teaching."
-					/>
-
-					<PositionCard
-						position="Mechanical Group leader"
-						description= "The mechanical group leader has the responsibility to ensure that all mechanical systems function according to specifications. This is done by keeping close contact and working with the team. The mechanical team designs, produces and tests the mechanical systems on the car. This is everything from the chassis to the steering system. The mechanical group leader is responsible for maintaining planning systems and coordination between different groups. The mechanical group leader should be structured and have an interest in creating high-performance mechanical systems"
-					/>	
-
-					<PositionCard
-						position="Assistant Technical leader"
-						description= "As an assistant technical leader you will assist the technical leader in making sure that there is progress within each group. A part of the work will be to be a  'Systems Engineer' , meaning that you will do some risk evaluation related to different problems and difficulties that we might experience in the technical groups. Finding solutions to such problem will be very beneficial.  Furthermore you will gain experience within leadership and will develop your skills within teamwork and communication. "
-					/>	
+					
 
 					<PositionCard
 						position="Marketing"
@@ -346,10 +337,7 @@ export default function Join() {
 			
 				
 
-				{/*<Title>Apply</Title>*/}
-				<JoinForm /> 
-
-				{/* <a target="_blank" rel="noopener noreferrer" href="https://forms.gle/4CWazjpxWbrPAmqx5"><Button>Application form</Button></a> */}
+				
 			</Section>
 			<Footer />
 		</>

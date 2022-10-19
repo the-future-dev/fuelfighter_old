@@ -1,7 +1,7 @@
 <?php
 $servername = 'fuelfighter.mysql.domeneshop.no';
 $username = 'fuelfighter';
-$password = 'My youth Sees Quaility Longterm #goodPassword';
+$password = 'Ormen-Pusen-hoved-57-lunte';
 $database = 'fuelfighter';
 
 // Create connection

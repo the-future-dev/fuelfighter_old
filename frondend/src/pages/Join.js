@@ -31,7 +31,7 @@ const PositionsContainer = styled.div`
 const IntroCard = styled.div`
 	vertical-align: top;
 	padding: 40px;
-	margin-top: 20px;
+	margin-top: 5px;
 	position: relative;
 	display: inline-block;
 	overflow: hidden;
@@ -43,8 +43,10 @@ const IntroCard = styled.div`
 
 const Deadline = styled.div`
 	vertical-align: top;
-	padding: 40px;
+	padding: 30px;
 	position: relative;
+	margin-top: -20px;
+	margin-bottom: 15px;
 	display: inline-block;
 	overflow: hidden;
 	width: 45%;
@@ -56,7 +58,7 @@ const Deadline = styled.div`
 `;
 
 function PositionCard({ position, description, linebreaker = "" }) {
-	const Card = styled.div`
+	const Card_1 = styled.div`
 		position: relative;
 		display: inline-block;
 		background-color: white;
@@ -67,7 +69,28 @@ function PositionCard({ position, description, linebreaker = "" }) {
 		overflow: hidden;
 		width: 350px;
 		max-width: 90vw;
+		height: 660px;
+		text-align: justify;
 	`;
+
+	const Card_2 = styled.div`
+		position: relative;
+		display: inline-block;
+		background-color: white;
+		vertical-align: top;
+		border-radius: 3px;
+		padding: 30px;
+		margin: 15px;
+		overflow: hidden;
+		width: 350px;
+		max-width: 90vw;
+		height: 370px;
+		text-align: justify;
+	`;
+
+	// Creating two card-tempelates: one for the first four card with the height 660px and one for the rest
+	// ,each with a equal but lower height.
+
 
 	const Title = styled.div`
 		font-weight: bold;
@@ -81,13 +104,27 @@ function PositionCard({ position, description, linebreaker = "" }) {
 		color: rgba(0,0,0,0.6);
 	`;
 
-	return (
-		<Card>
+	if ((position === "Marketing" || position === "Autonomous" || position === "Electrical" || position === "Mechanical")) {
+		return (
+		<Card_1>
 			<Title>{position}</Title>
 			<Description dangerouslySetInnerHTML={{ __html: description }} />
 			<Description dangerouslySetInnerHTML={{ __html: linebreaker }} />
-		</Card>
-	)
+		</Card_1>
+		)
+	} else {
+		return (
+		<Card_2>
+			<Title>{position}</Title>
+			<Description dangerouslySetInnerHTML={{ __html: description }} />
+			<Description dangerouslySetInnerHTML={{ __html: linebreaker }} />
+		</Card_2>
+		) 
+	}
+	
+	
+	
+	
 }
 
 function JoinForm() {
@@ -164,10 +201,9 @@ function JoinForm() {
 		selectedPositions: [],
 	};
 
-	const positions = ["Marketing", "Mechanical", "Autonomous", "Electrical", "Design", "Software",];
-	//const positions = ['Project Manager', 'Assistant project manager', 'Technical leader',  'Mechanical Group Leader', 'Autonomous Group Leader', 'Electrical Group Leader', 'Design Group Leader', 'Head of Finance', 'Head of Marketing', 'Software Group Leader']
-	//const positions = ["Head of Finance", "Mechanical Group Leader", "Design Group Leader", "Marketing Group Leader", "Mechanical Member", "Design Member", "Software Member", "Autonomous Member", "Electrical Member", "Social Media", "Web Developer", "Photo and Video", "Graphical Design", "Business Relations", "Event Manager", "Open Application"];
-	//const positions = ["Open application"];
+	const positions = ["Marketing", "Mechanical", "Autonomous", "Electrical", "Design", "Software","Finance"];
+	
+	
 	const handleCheckbox = (event, position) => {
 		if (event.target.value && form.selectedPositions.indexOf(position) === -1) {
 			form.selectedPositions.push(position);
@@ -279,15 +315,19 @@ export default function Join() {
 			<Header floating />
 			<PageBanner title="Join Us" image={bannerImage} />
 			<Section>
+				<IntroCard>
+					As a cross-disciplinary project we need students from every field of study. We are usually a team of 45 students, and always make sure some of them are exchange students. We like to have a good mixture of people from every year of study, to get good group dynamic and a good work culture to make people want to continue over several years. {/*By being a part of our team you get 7.5 credits you can use in you study plan.*/}
+				</IntroCard>
+				<Deadline>The recruitment period is closed, but you can send us an open application</Deadline>
+				
+				
+
 				{/*<Title>Apply</Title>*/}
 				<JoinForm /> 
 
 				{/* <a target="_blank" rel="noopener noreferrer" href="https://forms.gle/4CWazjpxWbrPAmqx5"><Button>Application form</Button></a> */}
 
-				<IntroCard>
-					As a cross-disciplinary project we need students from every field of study. We are usually a team of 45 students, and always make sure some of them are exchange students. We like to have a good mixture of people from every year of study, to get good group dynamic and a good work culture to make people want to continue over several years. {/*By being a part of our team you get 7.5 credits you can use in you study plan.*/}
-				</IntroCard>
-				<Deadline>The recruitment period is closed, but you can send us an open application</Deadline>
+				
 		
 				<PositionsContainer>
 					
@@ -328,10 +368,7 @@ export default function Join() {
 						description= "As a member of the finance group, you are responsible for the team’s economy. This includes keeping track of the team’s expenses, planning the budget, and gathering sponsors. You will get to work closely with the marketing team to ensure that good relationships with the sponsors are uphold."
 					/>
 
-						<PositionCard
-						position="Marketing"
-						description= "As a member of the marketing group you are responsible for making Fuel Fighter visible to the outside. This includes taking photos and videos, 3D animation, graphical design and posting on our social media accounts. The marketing group also works closely with the finance group with promoting our sponsors and providing material for them. If you are interested in subjects like photography, online marketing strategies or graphical design,  the marketing team is the place for you!"
-					/>
+						
 
 				</PositionsContainer>
 			

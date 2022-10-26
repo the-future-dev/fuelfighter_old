@@ -13,9 +13,7 @@ import pictureMissing from '../assets/team/default.png'
 // Assets
 import {name} from '../components/name';
 
-// const projectLeader = {name: "Tor Børve Rasmussen", email: "tors...",};
-// const sponsorLeader = {name: "abc..", email: "abc.."};
-// const marketingLeader = {name: "", email: ""} 
+
 
 export default function contactpage() {
 

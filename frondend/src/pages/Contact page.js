@@ -32,7 +32,7 @@ export default function contactpage() {
                                     <h4 id="generalPositionContact"> General inquiries</h4>
                                     <h5 id="generalDetailsContact"> Email: <a href="mailto:contact@fuelfighter.no" >contact@fuelfighter.no</a></h5>
                                 </div>
-                                <img id="contactIMG" alt="logo " src={logo}/>
+                                <img id="generalContactIMG" alt="logo " src={logo}/>
                             </div>
                         </div>   
                         
@@ -47,7 +47,7 @@ export default function contactpage() {
                                     <h5 id="detailsContact">Tlf:        <a href="tell:94131904" >941 34 655</a></h5>
                                     <h5 id="detailsContact">Email:      <a href="mailto:br@fuelfighter.no" >leder@fuelfighter.no</a></h5>
                                 </div>
-                                <img id="contactIMG" alt="Picture missing " src={pictureMissing}/> 
+                                {/* <img id="contactIMG" alt="Picture missing " src={pictureMissing}/>  */}
                             </div>
 
                             <div className='contactCard'>
@@ -57,7 +57,7 @@ export default function contactpage() {
                                     <h5 id="detailsContact">Tlf:        <a href="tell:45513404" >969 95 644</a></h5>
                                     <h5 id="detailsContact">Email:      <a href="mailto:teknisk@fuelfighter.no" >teknisk@fuelfighter.no</a></h5>
                                 </div>
-                                <img id="contactIMG" alt="Picture missing " src={pictureMissing}/>
+                                {/* <img id="contactIMG" alt="Picture missing " src={pictureMissing}/> */}
                             </div>
                         </div>
 
@@ -69,31 +69,21 @@ export default function contactpage() {
                                     <h5 id="detailsContact">Tlf:        <a href="tell:902 21 802" >902 21 802</a></h5>
                                     <h5 id="detailsContact">Email:      <a href="mailto:david.zhang@fuelfighter.no" >david.zhang@fuelfighter.no</a></h5>
                                 </div>
-                                <img id="contactIMG" alt="Picture missing " src={pictureMissing}/>
+                                {/* <img id="contactIMG" alt="Picture missing " src={pictureMissing}/> */}
                             </div>
 
                             <div className='contactCard'>
-                                <div className='infos'>
-                                    <h3>Adrian Golamini</h3>
-                                    <h4>Sponsorship Manager</h4>
-                                    {/* <h5 id="detailsContact">Tlf:        <a href="tell: ?" >???</a></h5> */}
-                                    <h5 id="detailsContact">Email:      <a href="mailto:adrian.golamini@fuelfighter.no" >adrian.golamini@fuelfighter.no</a></h5>
-                                </div>
-                                <img id="contactIMG" alt="Picture missing " src={pictureMissing}/>
+                                    <div className='infos'>
+                                        <h3>Adrian Golamini</h3>
+                                        <h4>Sponsorship Manager</h4>
+                                        {/* <h5 id="detailsContact">Tlf:        <a href="tell: ?" >???</a></h5> */}
+                                        <h5 id="detailsContact">Email:      <a href="mailto:adrian.golamini@fuelfighter.no" >adrian.golamini@fuelfighter.no</a></h5>
+                                    </div>
+                                {/* <img id="contactIMG" alt="Picture missing " src={pictureMissing}/> */}
                             </div>
                         </div>                        
 
-                        {/* <p> For sponsor related inquiries, please contact ... </p>
 
-                        <div className='contactCardBody2'>
-                            <div className='contactCard'>
-                                {sponsorLeader.name}
-                            </div>
-                            <div className='contactCard'>
-                                {marketingLeader.name}
-                            </div>
-
-                        </div> */}
                     </div>
                        
                     

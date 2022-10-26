@@ -87,6 +87,7 @@ Contact page
     text-align: center;
     margin-top: 0;
     margin-bottom: 20px;
+    font-weight: 100;
 }
 
 
@@ -130,4 +131,6 @@ h5.infos {
 .infos h3 {
     margin-top: 0;
     margin-bottom: 3px;
+    font-weight: bold;
+    font-size: 25;
 }

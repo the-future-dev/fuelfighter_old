@@ -13,13 +13,13 @@ export default function Header({floating}) {
             <div className="nav-content" >
                 <ul>
                     <li><A href="/" id="logo"><img alt="DNV Fuel Fighter: Home" src={floating ? logo_white : logo_black} /></A></li>
+                    <li><A href="/team">Team</A></li>
                     <li><A href="/blog">Blog</A></li>
                     <li><A href="/sponsors">Sponsors</A></li>
-                    <li><A href="/team">Team</A></li>
                     <li><A href="/about">About</A></li>
                     <li><A href="/history">History</A></li>
                     <li><A href="/join">Join</A></li>
-                    <li><A href="/pressroom">Press Room</A></li>
+                    <li><A href="/press">Press Room</A></li>
                 </ul>
                 <ul id="header-social">
 				    <li><a href="https://www.facebook.com/DnvFuelFighter/" title="facebook" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebookF} /></a></li>

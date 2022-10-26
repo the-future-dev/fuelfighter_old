@@ -54,13 +54,13 @@ export default function Blogpost({ history, id }) {
 	// default content
 	var content = (
 		<div style={{ display: 'flex', justifyContent: 'center', marginTop: '60px', height: '100vh' }} >
-			<ReactLoading type="spin" color="#0022445" height={30} width={30} />
+			<ReactLoading type="spin" color="#000000" height={30} width={30} />
 		</div>
 	)
 
 	if (blogpost.exeption !== undefined) {
 		content = (
-			<div style={{ display: 'flex', justifyContent: 'left-align', marginTop: '60px' }} >
+			<div style={{ display: 'flex', justifyContent: 'center', marginTop: '60px' }} >
 				{blogpost.exeption}
 			</div>
 		)

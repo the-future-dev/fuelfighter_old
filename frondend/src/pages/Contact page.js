@@ -28,7 +28,7 @@ export default function contactpage() {
                             <div className="contactCard">
                                 <div className="infos">
                                     <h4 id="generalPositionContact"> General inquiries</h4>
-                                    <h5 id="generalDetailsContact"> Email: <a href="mailto:contact@fuelfighter.no" >contact@fuelfighter.no</a></h5>
+                                    <h5 id="generalDetailsContact"> Email: <a href="mailto:post@fuelfighter.no" >post@fuelfighter.no</a></h5>
                                 </div>
                                 <img id="generalContactIMG" alt="logo " src={logo}/>
                             </div>
@@ -52,7 +52,7 @@ export default function contactpage() {
                                 <div className='infos'>
                                     <h3>Steve Carter Feujo Nomeny</h3>
                                     <h4>Technical leader</h4>
-                                    <h5 id="detailsContact">Tlf:        <a href="tell:45513404" >969 95 644</a></h5>
+                                    <h5 id="detailsContact">Tlf:        <a href="tell:96995644" >969 95 644</a></h5>
                                     <h5 id="detailsContact">Email:      <a href="mailto:teknisk@fuelfighter.no" >teknisk@fuelfighter.no</a></h5>
                                 </div>
                                 {/* <img id="contactIMG" alt="Picture missing " src={pictureMissing}/> */}
@@ -74,7 +74,7 @@ export default function contactpage() {
                                     <div className='infos'>
                                         <h3>Adrian Golamini</h3>
                                         <h4>Sponsorship Manager</h4>
-                                        {/* <h5 id="detailsContact">Tlf:        <a href="tell: ?" >???</a></h5> */}
+                                        <h5 id="detailsContact">Tlf:        <a href="tell:45661349" >45661349</a></h5>
                                         <h5 id="detailsContact">Email:      <a href="mailto:adrian.golamini@fuelfighter.no" >adrian.golamini@fuelfighter.no</a></h5>
                                     </div>
                                 {/* <img id="contactIMG" alt="Picture missing " src={pictureMissing}/> */}

@@ -30,7 +30,7 @@ export default function App() {
     '/thesis/:id' : (props) => <ThesisDetailsPage id={props.id} />,
     '/join' : () => <JoinPage />,
     '/admin' : () => <AdminPage />,
-    '/press' : () => <ContactPage />,
+    '/contact' : () => <ContactPage />,
   }
   
   const routeResult = useRoutes(routes);

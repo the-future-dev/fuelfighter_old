@@ -318,7 +318,7 @@ export default function Join() {
 				<IntroCard>
 					As a cross-disciplinary project we need students from every field of study. We are usually a team of 45 students, and always make sure some of them are exchange students. We like to have a good mixture of people from every year of study, to get good group dynamic and a good work culture to make people want to continue over several years. {/*By being a part of our team you get 7.5 credits you can use in you study plan.*/}
 				</IntroCard>
-				<Deadline>The recruitment period is closed, but you can send us an open application</Deadline>
+				<Deadline>We are recruiting for Autonomous, Electrical, Design, Software, Marketing & Finance. Deadline: 22 January</Deadline>
 				
 				
 

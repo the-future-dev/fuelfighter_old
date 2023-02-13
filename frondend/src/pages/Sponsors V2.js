@@ -34,6 +34,7 @@ import Haugaland from '../assets/sponsors/colored/Haugaland.png'
 import TotalEnergies from '../assets/sponsors/colored/TOTALENERGIES.jpg'
 import Omexom from '../assets/sponsors/colored/OMEXOM.png'
 import Hertz from '../assets/sponsors/colored/HERTZ.png'
+import RenRos from '../assets/sponsors/colored/RenRoros.png'
 
 export default function Sponsors() {
     return (
@@ -77,7 +78,14 @@ export default function Sponsors() {
                         <a target="_blank" rel="noopener noreferrer" href="https://totalenergies.com/" className="button flat">Visit</a>
                     </div> 
                 </div>
-
+                <div className="grid">
+                    <h2>Gold sponsors</h2>
+                    <div className="sponsor third">
+                        <img alt="Alva industries" src={RenRos} />
+                        <p>Ren Røros Intelligent Automation AS specializes in delivering rapid results and increased value through the digitization of work processes. The team provides the expertise and tools necessary to help businesses make the transition to a more digital future.</p>
+                        <a target="_blank" rel="noopener noreferrer" href="https://renroros.no/" className="button flat">Visit</a>
+                    </div> 
+                </div>
                 {/* 
                 <div className="grid">
                     <h2>Gold sponsors</h2>

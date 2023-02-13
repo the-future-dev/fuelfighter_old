@@ -240,72 +240,76 @@ function JoinForm() {
 	}
 
 	return (
-		<form onSubmit={handleSubmit} style={style.form} >
-			<div style={style.text.disclaimer} >
-				You will recieve a confirmation email when you submit your application. If you don`t, please send your application to post@fuelfighter.no and inform about your issue.
-			</div>
-			<span style={style.input.label}>First name</span>
-			<input
-				type="text"
-				style={style.input.text}
-				onChange={(event) => handleInput(event, 'firstname')}
-				// placeholder="firstname"
-				required
-			/>
-			<span style={style.input.label}>Last name</span>
-			<input
-				type="text"
-				style={style.input.text}
-				onChange={(event) => handleInput(event, 'lastname')}
-				// placeholder="firstname"
-				required
-			/>
-			<span style={style.input.label}>Email</span>
-			<input
-				type="email"
-				style={style.input.text}
-				onChange={(event) => handleInput(event, 'email')}
-				// placeholder="email"
-				required
-			/>
-			<span style={style.input.label}>Phone number</span>
-			<input
-				type="phonenumber"
-				style={style.input.text}
-				onChange={(event) => handleInput(event, 'phonenumber')}
-				// placeholder="email"
-				required
-			/>
-			<span style={style.input.label}>About you and why you want to apply</span>
-			<textarea
-				rows={5}
-				style={style.input.text}
-				onChange={(event) => handleInput(event, 'description')}
-				required
-			/>
-			<span style={style.input.label}>Select your desired position</span>
-			{
-				positions.map((position) =>
-					<label
-						style={style.input.check}
-						key={position}
-					>
-						<input
-							type="checkbox"
-							style={style.input.checkbox}
-							onChange={(e) => handleCheckbox(e, position)}
-							name={position}
-						/>
-						{position}
-					</label>
-				)
-			}
-			<input
-				type="submit"
-				value="Submit application"
-				style={style.input.submit}
-			/>
-		</form>
+		<>
+			<Deadline>Please send your application to <a href='post@fuelfighter.no'>post@fuelfighter.no</a>.</Deadline>
+			<Deadline>Remember to include: email, name and positions you are applying for.</Deadline>
+		</>
+		// <form onSubmit={handleSubmit} style={style.form} >
+		// 	<div style={style.text.disclaimer} >
+		// 		You will recieve a confirmation email when you submit your application. If you don`t, please send your application to post@fuelfighter.no and inform about your issue.
+		// 	</div>
+		// 	<span style={style.input.label}>First name</span>
+		// 	<input
+		// 		type="text"
+		// 		style={style.input.text}
+		// 		onChange={(event) => handleInput(event, 'firstname')}
+		// 		// placeholder="firstname"
+		// 		required
+		// 	/>
+		// 	<span style={style.input.label}>Last name</span>
+		// 	<input
+		// 		type="text"
+		// 		style={style.input.text}
+		// 		onChange={(event) => handleInput(event, 'lastname')}
+		// 		// placeholder="firstname"
+		// 		required
+		// 	/>
+		// 	<span style={style.input.label}>Email</span>
+		// 	<input
+		// 		type="email"
+		// 		style={style.input.text}
+		// 		onChange={(event) => handleInput(event, 'email')}
+		// 		// placeholder="email"
+		// 		required
+		// 	/>
+		// 	<span style={style.input.label}>Phone number</span>
+		// 	<input
+		// 		type="phonenumber"
+		// 		style={style.input.text}
+		// 		onChange={(event) => handleInput(event, 'phonenumber')}
+		// 		// placeholder="email"
+		// 		required
+		// 	/>
+		// 	<span style={style.input.label}>About you and why you want to apply</span>
+		// 	<textarea
+		// 		rows={5}
+		// 		style={style.input.text}
+		// 		onChange={(event) => handleInput(event, 'description')}
+		// 		required
+		// 	/>
+		// 	<span style={style.input.label}>Select your desired position</span>
+		// 	{
+		// 		positions.map((position) =>
+		// 			<label
+		// 				style={style.input.check}
+		// 				key={position}
+		// 			>
+		// 				<input
+		// 					type="checkbox"
+		// 					style={style.input.checkbox}
+		// 					onChange={(e) => handleCheckbox(e, position)}
+		// 					name={position}
+		// 				/>
+		// 				{position}
+		// 			</label>
+		// 		)
+		// 	}
+		// 	<input
+		// 		type="submit"
+		// 		value="Submit application"
+		// 		style={style.input.submit}
+		// 	/>
+		// </form>
 	);
 }
 

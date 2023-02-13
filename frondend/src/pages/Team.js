@@ -86,7 +86,7 @@ export default function Team() {
 		background-color: #F6F8FC;
 	`;
 
-	const defaultYear = 2022;
+	const defaultYear = 2023;
 
 	const [teams, setTeams] = useState([]);
 	const [selectedYear, setSelectedYear] = useState(defaultYear);
@@ -134,6 +134,7 @@ export default function Team() {
 				<PageBanner title="Team" image={imageHeader} />
 				<div style={{display: 'flex', justifyContent: 'center', width: '100%', marginTop: '20px'}}>
 					<select value={selectedYear.toString()} onChange={(e) => onSelectedYearChange(e.target.value)}>
+						<option value={2023}>2023</option>
 						<option value={2022}>2022</option>
 						<option value={2021}>2021</option>
 						<option value={2020}>2020</option>

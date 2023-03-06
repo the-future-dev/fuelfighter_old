@@ -35,6 +35,7 @@ import TotalEnergies from '../assets/sponsors/colored/TOTALENERGIES.jpg'
 import Omexom from '../assets/sponsors/colored/OMEXOM.png'
 import Hertz from '../assets/sponsors/colored/HERTZ.png'
 import RenRos from '../assets/sponsors/colored/RenRoros.png'
+import AutoCare from '../assets/sponsors/colored/RenRoros.png'
 
 export default function Sponsors() {
     return (
@@ -117,6 +118,11 @@ export default function Sponsors() {
                 </div>
                 <div className="grid">
                     <h2>Bronze sponsors</h2>
+                    <div className="sponsor third">
+                        <img alt="Auto Care" src={AutoCare} />
+                        <p>A product with a thousand uses. WD-40 Multi Use was originally developed to help block moisture in space-shuttle compliments, but was soon know as the product with thousands of uses. Since the beginning the formula remains the same however new uses are continuously being discovered. WD-40 is irreplaceable for numerous applications, such as removing moisture and lubrication. WD-40 protects metals against rust and corrosion, and even removes grease and smut from surfaces. Fuel Fighter NTNU uses WD-40 supplied from AutoCare in all moving parts to ensure smooth and efficient movements. </p>
+                        <a target="_blank" rel="noopener noreferrer" className="button flat" href="https://www.autocare.no" >Visit</a>
+                    </div>
                     <div className="sponsor third">
                         <img alt="DNV GL" src={DNVGL} />
                         <p>We are the independent expert in risk management and quality assurance. Driven by our purpose, to safeguard life, property and the environment, we empower our customers and their stakeholders with facts and reliable insights so that critical decisions can be made with confidence. As a trusted voice for many of the world’s most successful organizations, we use our knowledge to advance safety and performance, set industry benchmarks, and inspire and invent solutions to tackle global transformations.</p>

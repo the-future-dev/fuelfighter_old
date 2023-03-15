@@ -11,7 +11,7 @@ import PageBanner from '../components/PageBanner';
 import teamSevice from '../_services/team.service';
 
 // assets
-import imageHeader from '../assets/fellesbilde_bil.jpg';
+import imageHeader from '../assets/teamHero.jpg';
 
 const Description = styled.div`
 	width: 800px;
@@ -131,7 +131,7 @@ export default function Team() {
 		return (
 			<>
 				<Header floating/>
-				<PageBanner title="Team" image={imageHeader} />
+				<PageBanner title="Team" image={imageHeader} height={750}/>
 				<div style={{display: 'flex', justifyContent: 'center', width: '100%', marginTop: '20px'}}>
 					<select value={selectedYear.toString()} onChange={(e) => onSelectedYearChange(e.target.value)}>
 						<option value={2023}>2023</option>
